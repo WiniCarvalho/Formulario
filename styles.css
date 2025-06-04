@@ -1,0 +1,129 @@
+body {
+  background-color: #0e0e0e;
+  color: #222; 
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(35, 9, 230, 0.3);
+}
+
+h1 {
+    text-align: center;
+  color: rgb(2, 154, 255);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: rgb(2, 154, 255);
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  margin-left: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  accent-color: rgb(2, 154, 255);
+  cursor: pointer;
+  margin-right: 0.6rem;
+  transform: scale(1.2);
+  vertical-align: middle;
+  transition: transform 0.15s ease-in-out;
+}
+input[type="radio"]:hover {
+  transform: scale(1.4);
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+}
+
+
+.correto {
+  background-color: rgb(2, 154, 255);
+  color: rgb(5, 0, 46);
+  font-weight: 700;
+  box-shadow: 0 0 8px rgba(9, 86, 230, 0.705);
+}
+
+.incorreto {
+  background-color: rgb(231, 27, 0);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  box-shadow: 0 0 8px rgb(230, 9, 9);
+}
+
+button[type="submit"] {
+  background-color: rgb(2, 154, 255);
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(6, 113, 235, 0.705);
+}
+button[type="submit"]:hover {
+  background-color: rgba(11, 84, 219, 0.705);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgb(2, 154, 255);
+}
+
+
+#resultado {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(35,9,230,0.15), rgba(224,161,25,0.15));
+  color: rgb(35, 9, 230);
+  box-shadow: 0 0 12px rgba(35, 9, 230, 0.5);
+  user-select: none;
+  min-height: 48px;
+}
+
+
+main section {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(35, 9, 230, 0.2);
+}
+
+
+@media (max-width: 600px) {
+  form, h3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  button[type="submit"] {
+    width: 90%;
+    font-size: 16px;
+  }
+}
